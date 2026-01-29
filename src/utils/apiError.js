@@ -8,8 +8,8 @@ class apiError extends Error{
         super(message)
         this.statusCode=statusCode
         this.Data = null
-        this.message = false,
-        this.success = false,
+        this.message = message
+        this.success = false;
         this.error = error
 
         if (stack) {
@@ -22,4 +22,4 @@ class apiError extends Error{
 
 }
 
-expoer(apiError)
+export {apiError}
